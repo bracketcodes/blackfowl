@@ -1,0 +1,23 @@
+.detail-block {
+    display: flex;
+    flex-direction: row;;
+    .detail-label {
+        flex: 0.3;
+        font-weight: bold;
+    }
+    .detail {
+        flex: 0.5;
+    }
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;;
+    .cancel-button {
+        flex: 0.5;
+    }
+    .pickup-button {
+        flex: 0.5;
+        text-align: right
+    }
+}

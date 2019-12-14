@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar color='primary'>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card padding *ngFor='let order of ordersList'>
+      <div>
+        <div class='detail-block'>
+          <p class='detail-label'>order id</p>
+          <p class='detail'>{{order.id}}</p>
+        </div>
+        <div class='detail-block'>
+            <p class='detail-label'>address</p>
+            <p class='detail'>{{order.address}}</p>
+        </div>
+      </div>
+      <div class='button-container'>
+        <div class='cancel-button'>
+          <ion-button size='small'>Cancel</ion-button>
+        </div>
+        <div class='pickup-button'>
+          <ion-button size='small' (click)='onPickup(order)'>Pick-up</ion-button>
+        </div>
+      </div>
+    </ion-card>
+</ion-content>
